@@ -1,0 +1,14 @@
+<input [(ngModel)]="uzi" type="text" class="form-control">
+
+<button (click)="uziKuld()" type="button" class="btn btn-primary">Send</button>
+
+<!-- {{messages|json}} -->
+
+<div *ngFor="let message of messages" class="row">
+    <div class="col">
+        {{message.name}}
+    </div>
+    <div class="col">
+        {{message.message}}
+    </div>
+</div>
